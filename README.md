@@ -1,6 +1,6 @@
 clear()
 
-clears the screen its cross-platform
+clears the screen; its cross-platform
 
 -----------------------------------------------
 for using terminal first initialize the object : 
@@ -10,11 +10,11 @@ terminal = Terminal()
 ------------------------------------------------
 moving cursor : 
 
-terminal.move(y,x) #dont use this and then use print use terminal.set
+terminal.move(y,x) #dont use this and then use print; use terminal.set
 
 ------------------------------------------------
 getting a character of terminal : 
-!! returns the character that is in y x coordinate
+!! returns the character which is in y x coordinate
 
 terminal.get(y,x)
 
@@ -36,7 +36,7 @@ right
 left
 up down
 
-if the optional arguments is set to True it returns the decimal of the pressed key
+if the optional arguments is set to True; it returns the decimal of the pressed key
 
 exapmle:
 
