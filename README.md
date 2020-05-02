@@ -3,7 +3,7 @@ clear()
 clears the screen its cross-platform
 
 -----------------------------------------------
-for using it first initialize the object : 
+for using terminal first initialize the object : 
 
 terminal = Terminal()
 
