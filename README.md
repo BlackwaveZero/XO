@@ -1,19 +1,47 @@
-# XO
-how to use terminal
+clear()
+clears the screen its cross-platform
 
-from terminal import *
---------------------
-terminal=Terminal()
-terminal.open()
-###your code###
-terminal.close()
-------------------------------------------
-clear() this function clears the screen but terminal should be closed 
-#terminal.close()
----------------------------------------------
-terminal.move(y,x) # it goes to the y and x coordinates
-terminal.get(y,x) # it gets the char in y and x coordinate
-terminal.set(y,x,text) #it print a text in y and x coordinate
-terminal.wait4key() # it returns press key on the keyboard
-#enter right left up down
-#you can use this to identify the movement and then use the terminal.move() or terminal.set() or terminal.get()
+-----------------------------------------------
+for using it first initialize the object : 
+
+terminal = Terminal()
+
+------------------------------------------------
+moving cursor : 
+
+terminal.move(y,x) #dont use this and then use print use terminal.set
+
+------------------------------------------------
+getting a character of terminal : 
+!! returns the character that is in y x coordinate
+
+terminal.get(y,x)
+
+------------------------------------------------
+setting a string in terminal : 
+!! it moves the curser to the y x coordinate and then pritns str
+
+terminal.set(y,x,str)
+
+------------------------------------------------
+keyPressed : 
+how to detect if a key is pressed
+
+terminal.keyPressed([optional=False])
+
+it returns this : 
+enter
+right
+left
+up down
+
+if the optional arguments is set to True it returns the decimal of the pressed key
+
+exapmle:
+
+while True:
+    keyPressed=terminal.keyPressed() #getting the pressed key
+    clear() # clearing the screen
+    terminal.set(0,0,keyPressed) # shows which key is pressed
+    if(keyPressed=='enter'):
+        break
