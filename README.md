@@ -1,4 +1,5 @@
 clear()
+
 clears the screen its cross-platform
 
 -----------------------------------------------
